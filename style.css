@@ -3,3 +3,141 @@ iframe{
     height: 300px;
 
 }
+
+
+/* RESUME START */
+body > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+
+}
+
+section{
+    background-color: white;
+    font-family: monospace;
+    
+    padding: 10px;
+    width: 70%;
+    display: flex;
+    
+}
+/* section main */
+
+main{
+    /* background-color: teal; */
+    min-height: 300px;
+
+    width: 60%;
+    padding: 10px;
+}
+main > header{
+    background-color: transparent;
+    /* height: 100px; */
+    
+}
+main > header > h1{
+    font-size: 50px;
+    padding: 0;
+
+    position: relative;
+    bottom: 10px;
+}
+
+h3{
+    color: cornflowerblue;
+    font-size: 20px;
+}
+main > header > h3{
+    color: cornflowerblue;
+    font-size: 18px;
+    position: relative;
+    bottom: 50px;
+}
+
+
+
+main > article{
+    /* background-color: thistle; */
+
+    padding-right: 20px;
+    padding-bottom: 20px;
+   
+}
+article > header > h3{
+    font-size: 20px;
+    padding-top: 20px;
+}
+article > header > p{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.05rem;
+    line-height: 1.2rem;
+    /* font-weight: 400; */
+}
+article > header > p > a{
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: none;
+    color: cornflowerblue;
+}
+p > strong > span{
+    color: cornflowerblue;
+}
+p > strong[title='github']{
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* section aside  */
+
+aside{
+    /* background-color: tomato; */
+    min-height: 300px;
+
+    width: 40%;
+    padding-left: 20px;
+
+}
+aside > header{
+    /* background-color: transparent; */
+    height: 162px;
+    text-align: center;
+    
+}
+aside > header > p{
+    font-size: 20px;
+}
+
+
+
+aside > article{
+    /* background-color: thistle; */
+    margin-bottom: .04rem;
+
+    padding-right: 20px;
+   
+}
+article > header > h3{
+    font-size: 20px;
+}
+
+strong[title='aside']{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+p[title='skills']{
+    font-size: 14px;
+}
