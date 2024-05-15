@@ -16,7 +16,7 @@ iframe {
 
 } */
 body {
-    background-color: gainsboro;
+    /* background-color: gainsboro; */
     display: flex;
     justify-content: center;
     padding: 0;
@@ -33,8 +33,8 @@ section {
     font-style: normal;
 
     padding: 10px;
-    padding-left: 30px;
-    width: 75%;
+    /* padding-left: 30px; */
+    width: 900px;
     display: flex;
 
 }
@@ -176,12 +176,12 @@ aside>header {
     display: inline flex;
     flex-direction: column;
     /* align-items: center; */
-    justify-content: center;
+    justify-content: end;
 
 }
 
 aside>header>section {
-    /* background-color: tomato; */
+    background-color: transparent;
     color: royalblue;
     padding-left: 0;
 }
@@ -228,7 +228,7 @@ strong[title='aside'] {
 p[title='skill'] {
     font-size: 16px;
     font-weight: normal;
-    text-align: left;
+    text-align: justify;
     line-height: 25px;
     /* padding: 5px 0; */
 }
@@ -239,4 +239,26 @@ p[title='personal-info'] {
     text-align: left;
     line-height: 20px;
     /* padding: 5px 0; */
+}
+
+
+/* PRINT BUTTON */
+
+button[title='print'] {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+
+
+    color: royalblue;
+    background-color: transparent;
+
+    border: 2px dotted royalblue;
+    border-radius: 5px;
+
+    padding: 5px;
+}
+button[title='print']:hover{
+    color: whitesmoke;
+    background-color: royalblue;
 }
