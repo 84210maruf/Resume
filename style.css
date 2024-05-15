@@ -16,7 +16,7 @@ iframe {
 
 } */
 body {
-    /* background-color: gainsboro; */
+    background-color: gainsboro;
     display: flex;
     justify-content: center;
     padding: 0;
