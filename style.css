@@ -1,4 +1,6 @@
-iframe{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+iframe {
     width: 100%;
     height: 300px;
 
@@ -6,91 +8,143 @@ iframe{
 
 
 /* RESUME START */
-body > div{
+/* body > div{
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: gainsboro;
 
+} */
+body {
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
-section{
+section {
     background-color: white;
-    font-family: monospace;
-    
+    color: rgb(41, 53, 62);
+    /* font-family: "PT Serif", serif; */
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
     padding: 10px;
-    width: 70%;
+    padding-left: 30px;
+    width: 75%;
     display: flex;
-    
+
 }
+
 /* section main */
 
-main{
+main {
     /* background-color: teal; */
     min-height: 300px;
 
     width: 60%;
-    padding: 10px;
+    padding: 30px;
 }
-main > header{
+
+main>header {
     background-color: transparent;
     /* height: 100px; */
-    
+
 }
-main > header > h1{
+
+main>header>h1 {
     font-size: 50px;
     padding: 0;
 
     position: relative;
-    bottom: 10px;
+    bottom: 30px;
 }
 
-h3{
+h3 {
     color: cornflowerblue;
     font-size: 20px;
 }
-main > header > h3{
+
+main>header>h3 {
     color: cornflowerblue;
     font-size: 18px;
+
     position: relative;
-    bottom: 50px;
+    bottom: 70px;
 }
 
 
 
-main > article{
+main>article {
     /* background-color: thistle; */
 
     padding-right: 20px;
     padding-bottom: 20px;
-   
+
 }
-article > header > h3{
+
+article>header>h3 {
     font-size: 20px;
     padding-top: 20px;
 }
-article > header > p{
-    
-    font-family: Arial, Helvetica, sans-serif;
+
+article>header>p {
+
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 14px;
     letter-spacing: 0.05rem;
     line-height: 1.2rem;
-    /* font-weight: 400; */
+    /* text-align-last:left; */
+    /* text-wrap:pretty; */
+    /* text-align: justify; */
 }
-article > header > p > a{
-    font-size: 12px;
-    font-style: italic;
+
+article>header>p[title='paragraph'] {
+    /* text-align-last:left; */
+    /* text-wrap:pretty; */
+    text-align: justify;
+}
+
+article>header>p>a {
+    font-size: 13px;
+    /* font-style: italic; */
     text-decoration: none;
     color: cornflowerblue;
+
 }
-p > strong > span{
+
+p>strong>span {
     color: cornflowerblue;
 }
-p > strong[title='github']{
+
+p>strong[title='Source'] {
     font-size: 13px;
+    color: gray;
+    /* font-weight: normal; */
+
+
 }
 
+p[title='digree'] {
+    font-size: 14px;
+    /* font-weight: bold; */
+    line-height: 15px;
+}
 
+p[title='digree']>strong {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+p[title='university'] {
+    font-size: 13px;
+    color: gray;
+    /* font-weight: bold; */
+    line-height: 15px;
+}
 
 
 
@@ -103,41 +157,86 @@ p > strong[title='github']{
 
 /* section aside  */
 
-aside{
+aside {
     /* background-color: tomato; */
     min-height: 300px;
 
     width: 40%;
     padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 
 }
-aside > header{
-    /* background-color: transparent; */
-    height: 162px;
-    text-align: center;
-    
+
+aside>header {
+    /* background-color: teal; */
+    min-height: 180px;
+    /* text-align: center; */
+    display: inline flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+
 }
-aside > header > p{
-    font-size: 20px;
+
+aside>header>section {
+    /* background-color: tomato; */
+    color: royalblue;
+    padding-left: 0;
+}
+
+aside>header>section>i {
+    font-size: 18px;
+}
+
+aside>header>section>span {
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 10px;
 }
 
 
 
-aside > article{
+aside>article {
     /* background-color: thistle; */
-    margin-bottom: .04rem;
+    padding-bottom: 20px;
+    padding-top: 40px;
 
-    padding-right: 20px;
-   
+    /* padding-right: 20px; */
+    width: 80%;
+
+
 }
-article > header > h3{
+
+p[title='tech-skills'] {}
+
+aside>article>header>p[title='skills'] {
+    /* background-color: red; */
+    padding: 25px 0 0px;
+}
+
+aside>article>header>h3 {
     font-size: 20px;
 }
 
-strong[title='aside']{
+strong[title='aside'] {
     display: inline-block;
     padding-bottom: 10px;
 }
-p[title='skills']{
-    font-size: 14px;
+
+p[title='skill'] {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    line-height: 25px;
+    /* padding: 5px 0; */
+}
+
+p[title='personal-info'] {
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    line-height: 20px;
+    /* padding: 5px 0; */
 }
