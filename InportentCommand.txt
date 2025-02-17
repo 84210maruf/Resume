@@ -1,0 +1,234 @@
+################################################################
+##___________________________________________________________###
+##							     ###
+##             	     windows CMD                             ###
+##							     ###
+##___________________________________________________________###
+################################################################
+
+Dir /ls/cd/cd../mkdir/del/pwd/
+________________________________________________________________
+--> dir/ls OR ls[childDirName] 	       [#show instant path]
+
+--> cd [folderName] .\myFolder\foldername OR C:\path\folderName  [#open folder]
+
+--> cd..                                [#back to parent path]
+--> mkdir name
+--> del name/name.txt
+--> winget install
+--> winget list
+--> pwd                                [#current path]
+--> ctrl + space      [suggest child Directory's]
+-->
+_________________Write_Read_Copy_Move_____________________
+
+--> echo >file.txt                  [#Write a file.txt and adding value THEN hi "ENTER"]
+--> echo >d:\folder\file1.txt       [#Write file from other Directory]
+--> touch file.txt			[create file]
+--> more file.txt		           [#READ file ]
+
+--> cp <source> <destination>        [#COPY file to  others dir]
+    Ex.->cp file.txt C:\path\..  
+
+--> mv <source> <destination>        [#MOVE file to  others dir]
+   Ex.-> cp file.txt C:\Full_path\..
+
+--> rm [fileName] OR C:\path\FileName                      [#REMOVE File]
+
+
+
+__________________________Advance_______________________________
+-->Get-PSDrive
+-->Get-PSDrive -PSProvider Filesystem
+-->
+
+
+
+
+
+################################################################
+##___________________________________________________________###
+##							     ###
+##             	     	GIT                       	     ###
+##							     ###
+##___________________________________________________________###
+################################################################
+
+________________________Intialization___________________________
+
+-->git init
+-->git config --global user.name "Username"
+-->git config --global user.email "User@gmail.com"
+-->git commit -m "massage"
+_______________________________________________________________
+-->git status
+-->git branch
+-->git checkout [branchName]
+-->
+-->
+-->
+-->
+-->
+-->
+-->
+-->
+-->git reset --soft HEAD~1 [delete last 1 commit]
+-->
+
+
+
+
+################################################################
+##___________________________________________________________###
+##							     ###
+##             	   	 GITHUB   	                     ###
+##							     ###
+##___________________________________________________________###
+################################################################
+________________________________________________________________
+--> git remote add origin https://github.com/84210maruf/InstalletionNotes.git   [Liked with remote repository]
+--> git branch -M main
+--> git push -u origin main 
+
+#same
+--> git clone [remote-path]
+--> git fetch [remote-path] 
+
+**
+--> git config -l                               [see the user, email, info...]
+-->git branch --set-upstream [BranchName]		[git push from other branch]
+-->git branch --unset-upstream                   [if problem with git push]
+-->git reset --mixed origin/main                 [ error: failed to push some refs ]
+-->git reset --soft HEAD~1			 [delete last commit]
+
+***HEAD***
+initial..[HEAD->main] OR [HEAD->master]
+-->git checkout commit-id  [HEAD->commit]
+-->git checkout main     [go back to main]
+-->
+-->git merge          [if main to origin 'Diverse'. mean 'origin far from main']
+-->
+-->git log
+-->git log --graph --decorate $(git rev-list -g --all)   [SHOW Git all branch and HEAD Graph]
+-->git push -f origin main	[use it in git push error(non-fast-forward)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+################################################################
+##___________________________________________________________###
+##							     ###
+##             	   	    ERROR                            ###
+##							     ###
+##___________________________________________________________###
+################################################################
+
+***** Git push error *****
+# err[main -> main (non-fast-forward)]
+=> solve[
+	->git fetch origin
+	-> git reset --hard origin/main
+	->git push -f origin main
+]
+
+# error[interactive rebase in progress; ONTO main]
+=> solution[
+	->git rebase --continue
+
+]
+
+
+
+
+
+
+_____________________VS CODE SORTCUT___________________
+
+alt + shift + f -----------format document
+ctrl + j  ----------------- open terminal
+ctrl + / ------------------ write comment in html, CSS
+ctrl + b ------------------ open source bar
+alt + l + o --------------- open live server
+alt + l + c ---------------- close live server
+
+
+
+________________WINDOWS SHORTCUT_______________________
+
+alt + d --------------access path box
+win + x --------------all function
+ctrl + w ------------close window
+
+win + d ------------Minimize all/also maximize
+win + m 
+
+Win + h ............... Space to text anywhere
+
+alt + v ................ open terminal in folders.
+
+win + e ................ open folders
+
+win + t ................ taskbar access
+
+win + 1 
+win + 2
+win + 3 ................ open chrome
+
+
+
+
+################################################################
+##___________________________________________________________###
+##							     ###
+##             	    REACT INITIAL CMD                        ###
+##							     ###
+##___________________________________________________________###
+################################################################
+
+
+-----------------------NPM (Node Package Manager)--------------------
+CMD:
+1. npm init react-app my-app
+2. cd my-app
+3. npm start
+
+
+######
+#NPM #
+# OR #
+#NPX #
+######
+---------------------- NPX (Node Package Execute)--------------------
+
+CDM:
+1. npm install -g npm@latest       ----[before create app just updated with NPM. That's the only different NPM & NPX ]
+2. npx create-react-app my-app
+3. cd my-app
+4. npm start
+
+
+
+######
+#NPM #
+# AND#
+#VITE#
+######
+------------------- REACT & VITE (Update Process to Create react app and faster the app)------------------
+
+CDM:
+1. npm create vite@latest my-react-app -- --template react
+2. cd my-app
+3. npm install
+4. npm run dev  							-------> [as same.. "npm start"]
+
+
+
