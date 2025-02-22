@@ -1,0 +1,39 @@
+1. TypeScript
+2. Runtime [ Bun ,(alternative nodejs(NPM), deno) ]
+3. next js
+4. three js
+5. zsap and magic ui
+6. encore
+7. hono js
+8. sass
+9. turbopack vs webpack
+10. web bundler as(Turbopack, Vite, Webpack, Parcel, Esbuild....etc)
+11. CI/CD pipeline (jenkings)
+
+12. HMR(farm,vite,webpack,parcel,esuild)
+
+CLI
+vercel
+
+GitHub action as Nodejs
+ssh gpgkeys
+traepik dokploy
+
+[Bun is runtime, package manager, bundler, and task runner(all in one)]
+
+Sanity Cms + Next Js + Gsap [***]
+
+monoripo ***
+nativwind css
+shadcn
+posthog
+clintsite function list
+logging
+social share preview
+cooltag manager
+calc.com
+BatterAuth
+cerbos
+clarc /supabase
+omami dashboard
+sanity
